@@ -4,20 +4,20 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 //Recomendacion leer esto mentalmente con la voz de sigan viendo
-//me un aeropuerto casi dañado adivinen que vamo a hacer con el sigan viendo
+//me  regalaron un aeropuerto casi dañado adivinen que vamo a hacer con el SSIGAN VIENDO
 public class Main {
 
     public static void main(String[] args) throws ParseException {
         Scanner scanner = new Scanner(System.in);
 
-        // Creamos el aeropuerto SIGAN VIENDO
+        // Creamos el aeropuerto  SSIGAN VIENDO
         Aeropuerto aeropuerto = new Aeropuerto("Aeropuerto Internacional de cunco", "Cunco");
 
-        // creamo el avion SIGAN VIENDO
-        Avion avion = new Avion(1, 180); // ID: 1, capacidad: 180
+        // creamo el avion  SSIGAN VIENDO
+        Avion avion = new Avion(1, 180);
         aeropuerto.agregarAvion(avion);
 
-        // Creamos un vuelo SIGAN VIENDO
+        // Creamos un vuelo  SSIGAN VIENDO
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         Date fechaVuelo = null;
         try {
@@ -27,11 +27,11 @@ public class Main {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-
+           // Agregamos un vuelo  SSIGAN VIENDO
         Vuelo vuelo = new Vuelo("V1234", "Cunco poh peñi", "Hamaica mi chamo", fechaVuelo);
         avion.agregarVuelo(vuelo);
 
-        // Registlamoh los pasajeros SIGAN VIENDO
+        // Registlamoh los pasajeros  SSIGAN VIENDO
         Pasaporte pasaporte1 = new Pasaporte(1, "Peruano :(", 10, sdf.parse("10/10/2025"));
         Pasajeros pasajero1 = new Pasajeros("Samuel quispe", 50, pasaporte1);
         vuelo.agregarPasajero(pasajero1);
@@ -40,12 +40,12 @@ public class Main {
         Pasajeros pasajero2 = new Pasajeros("María García", 25, pasaporte2);
         vuelo.agregarPasajero(pasajero2);
 
-        //Registramos los pilotos  SIGAN VIENDO
+        //Registramos los pilotos  SSIGAN VIENDO
         Pasaporte pasaportePiloto = new Pasaporte(3, "Chileno", 5, sdf.parse("10/10/2024"));
         Piloto piloto = new Piloto(" Mi Amigo Alexis", 45, pasaportePiloto, "LIC3312", "V1234");
         vuelo.agregarPiloto(piloto);
 
-        // Validamos los pasaportes SIGAN VIENDO
+        // Validamos los pasaportes SSIGAN VIENDO
         System.out.println("Ahora validamo los pasaportes...");
         for (Pasajeros pasajero : vuelo.getPasajeros()) {
             System.out.println("Validando pasaporte de " + pasajero.getNombre());
