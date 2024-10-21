@@ -44,6 +44,7 @@ public class Main {
         Pasaporte pasaportePiloto = new Pasaporte(3, "Chileno", 5, sdf.parse("10/10/2024"));
         Piloto piloto = new Piloto(" Mi Amigo Alexis", 45, pasaportePiloto, "LIC3312", "V1234");
         vuelo.agregarPiloto(piloto);
+        piloto.accederInformacionVuelo(vuelo);
 
         // Validamos los pasaportes SSIGAN VIENDO
         System.out.println("Ahora validamo los pasaportes...");
@@ -66,6 +67,8 @@ public class Main {
         // Buscamos los pasajeros de un vuelo en especifico SSSIGAN VIENDO
         System.out.println("\nUsuarios del vuelo " + vuelo.getId() + ":");
         vuelo.registrarWeones(); // Método implementado en Vuelo
+
+
     }
     // Y miren nomas que lindo mi gente como quedaron las funcionalidades del aeropuerto, siganme los que no me siguen sssigan viendo
 }

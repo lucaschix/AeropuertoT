@@ -48,7 +48,7 @@ public class Pasaporte {
 		this.fechaExpiracion = fechaExpiracion;
 	}
 
-	// Métodos de validación (no son estáticos)
+
 	public void esValido() {
 		if (this.fechaExpiracion.before(new Date())) {
 			System.out.println("El pasaporte está expirado. No puede subir al avión.");
@@ -64,4 +64,5 @@ public class Pasaporte {
 			System.out.println("Necesitas un pasaporte nuevo, no te quedan hojas.");
 		}
 	}
+
 }

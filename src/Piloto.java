@@ -25,8 +25,8 @@ public class Piloto extends Persona {
 		this.vueloAsignado = vueloAsignado;
 	}
 
-	public void accederInformacionVuelo() {
-		// Aquí puedes implementar la lógica para acceder a la información del vuelo
-		System.out.println("Accediendo a la información del vuelo " + vueloAsignado);
+	public void accederInformacionVuelo(Vuelo vuelo) {
+
+		System.out.println(" Atencion les habla su capitan "+getNombre()+" les hablo para informarles que el vuelo"+vuelo.getId()+ " con destino a "+vuelo.getDestino()+" lleva a los siguientes pasajeros"+ vuelo.getPasajeros());
 	}
 }
