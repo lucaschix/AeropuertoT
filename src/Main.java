@@ -13,7 +13,8 @@ public class Main {
         Aeropuerto aeropuerto = new Aeropuerto("Aeropuerto Internacional", "Ciudad X");
 
         // Crear un avión
-        
+
+
         Avion avion = new Avion(1, 180); // ID: 1, capacidad: 180
         aeropuerto.agregarAvion(avion);
 
